@@ -1,7 +1,27 @@
 Closures:
+Q. What will be part of the closure for a method inside IIFE Module?
 Lets say we have a IIFE module. and 
-we are in a event handler method then -- all the private variables of the module and methods which are not at all used in the module itself 
+1) we are in a event handler method then -- all the private variables of the module and methods which are not at all used in the module itself 
 won't be part of the closure.
 Part of the closure will be :
   all variables and methods being used in the handler method which are outside the handler code.
   all variables and methods being used in any method outside the handler code and inside the module.
+2) Above mentioned concept is applied to other functions in the module as well.
+
+function or callback itself is part of the Closure of it. That is why we are able to access it.
+
+Client Side callback via Ajax API.
+If an ajax request has called our callback then following will be the this.
+below is an example of success.
+this:Object
+  requestData:Object  //  whatever data: ... we have sent to ajax request.
+  status:"success"
+  xhr:Object
+
+Note:- Because the API must be calling our callback with Call/Apply and would be passing the this parameter as above object.
+  
+ If we have called the callback with Call and Apply then whatever context you are passing will be this for the callback.
+ if we have called the callback as a plain function like fn(params) then this will be undefined.
+
+"use strict" gives a compile error for declaring variable without var keyword.
+
