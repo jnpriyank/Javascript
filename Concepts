@@ -1,0 +1,7 @@
+Closures:
+Lets say we have a IIFE module. and 
+we are in a event handler method then -- all the private variables of the module and methods which are not at all used in the module itself 
+won't be part of the closure.
+Part of the closure will be :
+  all variables and methods being used in the handler method which are outside the handler code.
+  all variables and methods being used in any method outside the handler code and inside the module.
