@@ -1,0 +1,13 @@
+/* Adding a link via javascript in body */
+var link = document.createElement("a");
+link.id = 'linkTest';
+link.innerText = 'Plural Sight';
+link.href = 'https://www.google.co.in';
+link.style.zIndex = 9999;
+link.style.position = "absolute";
+link.style.left = '100px';
+link.style.top = '100px';
+document.body.appendChild(link);
+<a id="linkTest" href="https://www.google.co.in" style="z-index:? 9999; position: absolute; left: 100px; top: 100px;">Plural Sight</a>
+
+/* Adding a link via javascript in body */
