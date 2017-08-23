@@ -1,1 +1,8 @@
 
+Automatic Semicolon Insertion:
+What are the rules for JavaScript's automatic semicolon insertion (ASI)?
+https://stackoverflow.com/questions/2846283/what-are-the-rules-for-javascripts-automatic-semicolon-insertion-asi
+http://www.ecma-international.org/ecma-262/7.0/index.html#sec-rules-of-automatic-semicolon-insertion
+
+Void Operator:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void
